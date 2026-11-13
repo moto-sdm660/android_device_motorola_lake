@@ -23,10 +23,13 @@ from extract_utils.main import (
 
 namespace_imports = [
     'device/motorola/lake',
-    'device/motorola/msm8998-common',
-    'hardware/qcom-caf/msm8998',
+    'device/motorola/sdm660-common',
+    # Kernel 4.19 (QSSI) uses the sdm660 HALs
+    'hardware/qcom-caf/sdm660',
+    'vendor/qcom/opensource/commonsys/display',
+    'vendor/qcom/opensource/display',
     'hardware/qcom-caf/wlan',
-    'vendor/motorola/msm8998-common',
+    'vendor/motorola/sdm660-common',
     'vendor/qcom/opensource/dataservices',
 ]
 
@@ -57,5 +60,5 @@ module = ExtractUtilsModule(
 )
 
 if __name__ == '__main__':
-    utils = ExtractUtils.device_with_common(module, 'msm8998-common', module.vendor)
+    utils = ExtractUtils.device_with_common(module, 'sdm660-common', module.vendor)
     utils.run()

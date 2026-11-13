@@ -124,6 +124,6 @@ PRODUCT_PACKAGES_DEBUG += \
     bootctl \
     update_engine_client
 
-# Inherit from motorola msm8998-common
+# Inherit from motorola sdm660-common
 TARGET_MOTO_PLATFORM := sdm660
-$(call inherit-product, device/motorola/msm8998-common/common.mk)
+$(call inherit-product, device/motorola/sdm660-common/common.mk)

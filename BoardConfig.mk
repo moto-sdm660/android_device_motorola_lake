@@ -19,8 +19,8 @@ BOARD_USES_KEYMASTER_4 := true
 TARGET_BOARD_PLATFORM := sdm660
 TARGET_BOOTLOADER_BOARD_NAME := SDM660
 
-# Inherit from motorola msm8998-common
-include device/motorola/msm8998-common/BoardConfigCommon.mk
+# Inherit from motorola sdm660-common
+include device/motorola/sdm660-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/motorola/lake
 
